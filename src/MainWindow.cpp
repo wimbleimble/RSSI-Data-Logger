@@ -12,6 +12,7 @@ MainWindow::MainWindow(QWidget* parent) :
 	ports{ QSerialPortInfo::availablePorts() }
 {
 	ui->setupUi(this);
+	std::cout << "Hello World!\n";
 	
 	populateCOMPortCombo();
 	
